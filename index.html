@@ -19,18 +19,19 @@
   
   <script type="text/javascript">
     function sendEmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "abdullahbutt12320@gmail.com",
-        Password: "geopakistan",
-        To: 'abdullahbutt12320@gmail.com',
-        From: "sender@email_address.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
+	    window.open('mailto:abdullahbutt12320@gmail.com?subject=subject&body=body');
+//       Email.send({
+//         Host: "smtp.gmail.com",
+//         Username: "abdullahbutt12320@gmail.com",
+//         Password: "geopakistan",
+//         To: 'abdullahbutt12320@gmail.com',
+//         From: "sender@email_address.com",
+//         Subject: "Sending Email using javascript",
+//         Body: "Well that was easy!!",
+//       })
+//         .then(function (message) {
+//           alert("mail sent successfully")
+//         });
     }
   </script>
 </head>
